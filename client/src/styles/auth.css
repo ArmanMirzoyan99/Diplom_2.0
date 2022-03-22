@@ -1,0 +1,135 @@
+.header-auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background-color: #fff;
+    min-height: 55px;
+  }
+  
+  .header-auth .logo {
+    height: 48px;
+    width: 48px;
+  }
+  
+  .logo img {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    height: auto;
+  }
+  
+  .auth {
+    margin: 0 auto;
+    max-width: 800px;
+    padding-top: 80px;
+    
+  }
+  
+  .auth__header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .auth__title {
+    font-size: 1.5rem;
+    color: #393a4f;
+    font-weight: 300;
+  
+    margin-bottom: 10px;
+  }
+  
+  .auth__subtitle {
+    font-size: .9rem;
+    color: #a2a5b9;
+    font-weight: normal;
+  }
+  
+  .auth__form {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+  
+  .form__group:not(:last-child) {
+    margin-bottom: 15px;
+  }
+  
+  .form__label {
+    display: block;
+    margin-bottom: 8px;
+  
+    font-size: .9rem;
+    font-weight: 500;
+    color: #393a4f;
+  }
+  
+  .form__input {
+    width: 100%;
+    height: 36px;
+    padding: 12px;
+    
+    font-size: .9rem;
+    font-family: inherit;
+  
+    border-radius: 0.65rem;
+    outline: none;
+    border: 1px solid #dfdddd;
+    
+    transition: all .1s linear;
+  }
+  
+  .form__input:hover {
+    border-color: #b5b5b5
+  }
+  
+  .form__input:focus {
+    border-color:lightblue;
+  }
+  
+  .form__input::placeholder {
+    color: #ced0d8;
+  }
+  
+  .form__btn {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+  
+    background-color: #3D70B2;
+    border-radius: 0.65rem;
+  
+    transition: all .3s;
+  }
+  
+  .form__btn:hover {
+    box-shadow: 0 14px 26px -12px rgb(61 112 178 / 42%), 0 4px 23px 0px rgb(0 0 0 / 12%), 0 8px 10px -5px rgb(61 112 178 / 20%) !important;
+    opacity: .8;
+  }
+  
+  .form__link {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+  
+    font-size: .8rem;
+    color: #a2a5b9;
+    text-decoration: none;
+  
+    transition: color .3s;
+  }
+  
+  .form__link:hover {
+    color: #3d70b2;
+  }
+  
+  .form__gender {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+  }
+  

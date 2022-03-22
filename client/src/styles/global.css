@@ -1,0 +1,153 @@
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#theme {
+  display: none;
+}
+#theme:checked ~ * {
+  filter: invert(1);
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  background: white;
+}
+
+.main {
+  max-width: 1100px;
+  width: 100%;
+  min-height: 100vh;
+  margin: auto;
+}
+
+img {
+  object-fit: cover;
+}
+.lang {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.lang .dropdown-menu {
+  margin-top: 6px;
+}
+.lang .dropdown-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.lang .dropdown-item svg {
+  width: 20px;
+  height: 20px;
+}
+.lang button {
+  background-color: #D3D3D3;
+}
+.posts .dropdown-menu {
+  min-width: 230px;
+}
+
+/* -------- AUTH ---------- */
+@import url("./auth.css");
+
+/* -------- LOADING ---------- */
+@import url("./loading.css");
+
+/* -------- Header ---------- */
+@import url("./header.css");
+
+/* -------- Avatar ---------- */
+@import url("./avatar.css");
+
+/* -------- Header ---------- */
+@import url("./header.css");
+
+/* -------- Profile ---------- */
+@import url("./profile.css");
+
+/* -------- Home ---------- */
+@import url("./home.css");
+
+/* -------- Status Modal ---------- */
+@import url("./status_modal.css");
+
+/* -------- Comments ---------- */
+@import url("./comments.css");
+
+/* -------- Post Thumb ---------- */
+@import url("./post_thumb.css");
+
+/* -------- Message---------- */
+@import url("./message.css");
+
+/* -------- Icons---------- */
+@import url("./icons.css");
+
+/* -------- Call Modal---------- */
+@import url("./call_modal.css");
+
+
+
+/* --------- Responsive ------ */
+@media (max-width: 766px){
+  .header .navbar .logo{
+    display: none;
+  }
+  .header .menu{
+      width: 100%;
+      height: 40px;
+  }
+  .header .menu .navbar-nav{
+      display: flex;
+      justify-content: space-around;
+  }
+  
+  .header .search_form{
+      width: 100%;
+      order: 1;
+  }
+
+
+  .message{
+    height: calc(100vh - 100px);
+  }
+  .right_mess,
+  .left_mess{
+    display: none;
+  }
+  .status{
+    padding: 20px 10px;
+  }
+
+  .lang {
+    margin: 30px 0 10px auto;
+  }
+  .lang .dropdown-menu {
+    transform: translateX(-20px);
+  }
+
+}
+
+
+
+
+.mode{
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
